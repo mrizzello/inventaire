@@ -1,0 +1,26 @@
+uuid: d30e993d-e204-49ad-bbe6-8f33aed37802
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.substance.field_fds
+    - field.field.node.substance.field_formule_lineaire
+    - field.field.node.substance.field_synonymes
+    - node.type.substance
+  module:
+    - user
+id: node.substance.teaser
+targetEntityType: node
+bundle: substance
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_fds: true
+  field_formule_lineaire: true
+  field_synonymes: true

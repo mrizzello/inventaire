@@ -1,0 +1,19 @@
+uuid: cfeb6ec5-9d77-437c-b63a-e92a25c79489
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_formule_lineaire
+    - node.type.substance
+id: node.substance.field_formule_lineaire
+field_name: field_formule_lineaire
+entity_type: node
+bundle: substance
+label: 'Formule linéaire'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
