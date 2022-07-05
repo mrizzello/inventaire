@@ -24,3 +24,4 @@ hidden:
   field_fds: true
   field_formule_lineaire: true
   field_synonymes: true
+  langcode: true
