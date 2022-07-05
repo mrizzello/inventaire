@@ -7,20 +7,20 @@ dependencies:
 _core:
   default_config_hash: njaZigMvB4ap21Fg_tQcJhWgYJCGNi49Z5rRL_N6RI0
 id: user_admin_people
-label: People
+label: Personnes
 module: user
-description: 'Find and manage people interacting with your site.'
+description: 'Trouver et gérer les personnes interagissant avec votre site.'
 tag: default
 base_table: users_field_data
 base_field: uid
 display:
   default:
     id: default
-    display_title: Default
+    display_title: 'Par défaut'
     display_plugin: default
     position: 0
     display_options:
-      title: People
+      title: Personnes
       fields:
         user_bulk_form:
           id: user_bulk_form
@@ -31,7 +31,7 @@ display:
           admin_label: ''
           entity_type: user
           plugin_id: user_bulk_form
-          label: 'Bulk update'
+          label: 'Mise à jour en masse'
           exclude: false
           alter:
             alter_text: false
@@ -82,7 +82,7 @@ display:
           entity_type: user
           entity_field: name
           plugin_id: field
-          label: Username
+          label: 'Nom d''utilisateur'
           exclude: false
           alter:
             alter_text: false
@@ -134,7 +134,7 @@ display:
           entity_type: user
           entity_field: status
           plugin_id: field
-          label: Status
+          label: État
           exclude: false
           alter:
             alter_text: false
@@ -188,7 +188,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: user_roles
-          label: Roles
+          label: Rôles
           exclude: false
           alter:
             alter_text: false
@@ -297,7 +297,7 @@ display:
           entity_type: user
           entity_field: access
           plugin_id: field
-          label: 'Last access'
+          label: 'Dernier accès'
           exclude: false
           alter:
             alter_text: false
@@ -352,7 +352,7 @@ display:
           admin_label: ''
           entity_type: user
           plugin_id: entity_operations
-          label: Operations
+          label: Actions
           exclude: false
           alter:
             alter_text: false
@@ -472,20 +472,20 @@ display:
             last: 'Last »'
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Éléments par page'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- Tout -'
             offset: false
-            offset_label: Offset
+            offset_label: Décalage
           quantity: 9
       exposed_form:
         type: basic
         options:
           submit_button: Filter
           reset_button: true
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: Réinitialiser
+          exposed_sorts_label: 'Trier par'
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
@@ -600,7 +600,7 @@ display:
               administrator: '0'
           is_grouped: true
           group_info:
-            label: Status
+            label: État
             description: ''
             identifier: status
             optional: true
@@ -906,13 +906,13 @@ display:
       menu:
         type: 'default tab'
         title: List
-        description: 'Find and manage people interacting with your site.'
+        description: 'Trouver et gérer les personnes interagissant avec votre site.'
         weight: -10
         menu_name: admin
         context: ''
       tab_options:
         type: normal
-        title: People
+        title: Personnes
         description: 'Manage user accounts, roles, and permissions.'
         weight: 0
         menu_name: admin
