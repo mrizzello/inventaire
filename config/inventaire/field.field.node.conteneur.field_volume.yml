@@ -1,0 +1,23 @@
+uuid: b93b32c3-8500-4bcd-9de6-7508b699fe52
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_volume
+    - node.type.conteneur
+id: node.conteneur.field_volume
+field_name: field_volume
+entity_type: node
+bundle: conteneur
+label: Volume
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: '[L]'
+field_type: float

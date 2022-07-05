@@ -1,0 +1,21 @@
+uuid: 743defab-4b5e-4b5d-b20f-384c0a7ba429
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_reception
+    - node.type.conteneur
+  module:
+    - datetime
+id: node.conteneur.field_date_reception
+field_name: field_date_reception
+entity_type: node
+bundle: conteneur
+label: 'Date de réception'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

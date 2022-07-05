@@ -1,0 +1,21 @@
+uuid: 54da836a-ae39-4bae-b447-822a21d95fb6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_localisation
+    - node.type.conteneur
+  module:
+    - options
+id: node.conteneur.field_localisation
+field_name: field_localisation
+entity_type: node
+bundle: conteneur
+label: Localisation
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

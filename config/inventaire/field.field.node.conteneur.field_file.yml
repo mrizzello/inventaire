@@ -1,0 +1,21 @@
+uuid: bf62d63d-5b96-40df-8881-57957749a517
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_file
+    - node.type.conteneur
+  module:
+    - options
+id: node.conteneur.field_file
+field_name: field_file
+entity_type: node
+bundle: conteneur
+label: File
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

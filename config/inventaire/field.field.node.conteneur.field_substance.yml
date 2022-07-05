@@ -1,0 +1,25 @@
+uuid: ba5fe8fa-b5b5-432c-bf45-b641caf2f5f8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_substance
+    - node.type.conteneur
+id: node.conteneur.field_substance
+field_name: field_substance
+entity_type: node
+bundle: conteneur
+label: Substance
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: autocomplete_substances
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

@@ -1,0 +1,23 @@
+uuid: 79650e0a-fdce-4428-9327-90b4b982ec11
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_masse
+    - node.type.conteneur
+id: node.conteneur.field_masse
+field_name: field_masse
+entity_type: node
+bundle: conteneur
+label: Masse
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ' [g]'
+field_type: float

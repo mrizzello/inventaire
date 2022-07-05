@@ -1,0 +1,23 @@
+uuid: ac3c4d0a-e667-4c85-8cb3-2d92926da7b7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_out
+    - node.type.conteneur
+id: node.conteneur.field_out
+field_name: field_out
+entity_type: node
+bundle: conteneur
+label: 'Sortir de l''inventaire'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activé
+  off_label: Désactivé
+field_type: boolean

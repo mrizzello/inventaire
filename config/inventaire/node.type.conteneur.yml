@@ -1,0 +1,17 @@
+uuid: 85c64a08-57f8-4665-8ddb-5a203123cafd
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Conteneur
+type: conteneur
+description: ''
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: true

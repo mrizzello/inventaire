@@ -1,0 +1,33 @@
+uuid: 94226376-666c-498f-abe6-5fea86d75c54
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_localisation
+field_name: field_localisation
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: chiap
+      label: 'Chimie - Armoire produits'
+    -
+      value: chiav
+      label: 'Chimie - Armoire ventilée'
+    -
+      value: chiv
+      label: 'Chimie - Vitrine salle prep.'
+    -
+      value: chial
+      label: 'Chimie - Armoire laboratoire'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

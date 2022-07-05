@@ -1,0 +1,37 @@
+uuid: 1409ab32-c769-4e4a-9e17-e0872c506801
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.conteneur.field_date_out
+    - field.field.node.conteneur.field_date_reception
+    - field.field.node.conteneur.field_file
+    - field.field.node.conteneur.field_localisation
+    - field.field.node.conteneur.field_masse
+    - field.field.node.conteneur.field_out
+    - field.field.node.conteneur.field_substance
+    - field.field.node.conteneur.field_volume
+    - node.type.conteneur
+  module:
+    - user
+id: node.conteneur.teaser
+targetEntityType: node
+bundle: conteneur
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_date_out: true
+  field_date_reception: true
+  field_file: true
+  field_localisation: true
+  field_masse: true
+  field_out: true
+  field_substance: true
+  field_volume: true
+  langcode: true

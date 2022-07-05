@@ -1,0 +1,19 @@
+uuid: b71794c6-8328-418e-a31d-0e478a7d6cd3
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_substance
+field_name: field_substance
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

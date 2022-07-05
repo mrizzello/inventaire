@@ -1,0 +1,21 @@
+uuid: 76bcffc7-2218-43e2-83ba-d3bcb87ec255
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_out
+    - node.type.conteneur
+  module:
+    - datetime
+id: node.conteneur.field_date_out
+field_name: field_date_out
+entity_type: node
+bundle: conteneur
+label: 'Date de sortie'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime
