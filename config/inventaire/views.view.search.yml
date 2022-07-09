@@ -6,8 +6,10 @@ dependencies:
     - field.storage.node.field_formule_lineaire
     - field.storage.node.field_synonymes
     - search_api.index.substances
+    - user.role.authenticated
   module:
     - search_api
+    - user
 id: search
 label: Recherche
 module: views
@@ -447,8 +449,10 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       access:
-        type: none
-        options: {  }
+        type: role
+        options:
+          role:
+            authenticated: authenticated
       cache:
         type: none
         options: {  }
@@ -586,6 +590,7 @@ display:
         - url
         - url.query_args
         - 'user.node_grants:view'
+        - user.roles
       tags:
         - 'config:field.storage.node.field_formule_lineaire'
         - 'config:field.storage.node.field_synonymes'
@@ -606,6 +611,7 @@ display:
         - url
         - url.query_args
         - 'user.node_grants:view'
+        - user.roles
       tags:
         - 'config:field.storage.node.field_formule_lineaire'
         - 'config:field.storage.node.field_synonymes'

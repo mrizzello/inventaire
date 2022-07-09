@@ -1,0 +1,23 @@
+uuid: 04cf7cd9-292e-49bb-a7e5-959c7a07b731
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - claro
+id: sitebranding
+theme: claro
+region: breadcrumb
+weight: -4
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: false
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

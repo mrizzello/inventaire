@@ -2,13 +2,13 @@ _core:
   default_config_hash: l58O_yEXSo-SeJi19LXdzTU1tNJG3lmnIhCitRkM1tk
 langcode: fr
 uuid: 5d8f3e2a-1aa7-4050-ab7f-6739e3ad56a6
-name: GNLC.Chimie
+name: GNLC
 mail: michele.rizzello@eduvaud.ch
-slogan: ''
+slogan: 'Inventaire des produits chimiques'
 page:
-  403: ''
+  403: /user/login
   404: ''
-  front: /user/login
+  front: /search
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: fr

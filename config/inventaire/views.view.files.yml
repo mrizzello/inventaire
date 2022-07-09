@@ -786,7 +786,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: entity_label
-          label: Entity
+          label: Entité
           exclude: false
           alter:
             alter_text: false
