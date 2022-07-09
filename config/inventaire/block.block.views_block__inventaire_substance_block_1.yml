@@ -1,0 +1,33 @@
+uuid: a16c17f4-34d6-457a-9468-64ea06d3a9e0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.inventaire_substance
+  module:
+    - node
+    - views
+  theme:
+    - claro
+id: views_block__inventaire_substance_block_1
+theme: claro
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:inventaire_substance-block_1'
+settings:
+  id: 'views_block:inventaire_substance-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      substance: substance

@@ -1,0 +1,8 @@
+uuid: 276f60e0-b617-43fc-95da-43eb9776edee
+langcode: fr
+status: true
+dependencies: {  }
+id: date_conteneurs
+label: 'Date conteneurs'
+locked: false
+pattern: d/m/Y
