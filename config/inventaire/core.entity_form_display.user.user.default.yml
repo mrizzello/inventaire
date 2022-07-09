@@ -1,0 +1,20 @@
+uuid: a1bf26ce-d070-495c-a7a9-d4785322ce01
+langcode: fr
+status: true
+dependencies:
+  module:
+    - user
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  account:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  language: true
+  timezone: true

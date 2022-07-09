@@ -1,0 +1,11 @@
+uuid: 3388fcdc-d261-4e3f-8fc4-43927a9035d8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.substance
+id: node.substance
+target_entity_type_id: node
+target_bundle: substance
+default_langcode: site_default
+language_alterable: false

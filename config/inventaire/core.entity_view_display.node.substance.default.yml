@@ -21,28 +21,29 @@ content:
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    weight: 104
+    weight: 3
     region: content
   field_formule_lineaire:
     type: string
-    label: above
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 103
+    weight: 1
     region: content
   field_synonymes:
     type: string
-    label: above
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 101
+    weight: 2
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
   langcode: true
+  search_api_excerpt: true
