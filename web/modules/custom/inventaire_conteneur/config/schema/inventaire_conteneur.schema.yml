@@ -1,0 +1,8 @@
+# Schema for the configuration files of the Inventaire Conteneur module.
+inventaire_conteneur.settings:
+  type: config_object
+  label: 'Inventaire Conteneur settings'
+  mapping:
+    enabled:
+      type: boolean
+      label: 'Activate'

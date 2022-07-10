@@ -1,0 +1,36 @@
+<?php
+
+use \Drupal\Core\Form\FormStateInterface;
+use \Drupal\Core\Url;
+
+/**
+ * @file
+ * Primary module hooks for Inventaire Conteneur module.
+ */
+
+function inventaire_conteneur_form_node_conteneur_form_alter(&$form, FormStateInterface $form_state, $form_id)
+{
+
+    if (!\Drupal::config('inventaire_conteneur.settings')->get('enabled')) {
+        return;
+    }
+
+    $node = \Drupal::routeMatch()->getParameter('node');
+    if ($node instanceof \Drupal\node\NodeInterface && $node->bundle() == 'substance') {
+        $form['field_substance']['widget'][0]['target_id']['#default_value'] = \Drupal\node\Entity\Node::load($node->id());
+        $form['field_substance']['#disabled'] = TRUE;
+    }
+
+    $form['actions']['submit']['#submit'][] = 'inventaire_conteneur_redirect_callback';
+
+}
+
+function inventaire_conteneur_form_node_conteneur_edit_form_alter(&$form, FormStateInterface $form_state, $form_id)
+{
+    $form['actions']['submit']['#submit'][] = 'inventaire_conteneur_redirect_callback';
+}
+
+function inventaire_conteneur_redirect_callback($form, FormStateInterface $form_state)
+{
+    $form_state->setRedirect('entity.node.canonical', ['node' => $form_state->getValue('field_substance')[0]['target_id']]);
+}
