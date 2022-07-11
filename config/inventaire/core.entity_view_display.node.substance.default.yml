@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.substance.field_categorie_ghs
     - field.field.node.substance.field_fds
     - field.field.node.substance.field_formule_lineaire
     - field.field.node.substance.field_synonymes
@@ -15,13 +16,22 @@ targetEntityType: node
 bundle: substance
 mode: default
 content:
+  field_categorie_ghs:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: pictogrammes_sgh
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
   field_fds:
     type: file_default
     label: above
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    weight: 3
+    weight: 4
     region: content
   field_formule_lineaire:
     type: string

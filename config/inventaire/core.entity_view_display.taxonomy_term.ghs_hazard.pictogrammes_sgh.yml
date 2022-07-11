@@ -1,0 +1,37 @@
+uuid: c839f245-4e9c-412b-959e-5ed9723611fe
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.taxonomy_term.pictogrammes_sgh
+    - field.field.taxonomy_term.ghs_hazard.field_pictogramme
+    - taxonomy.vocabulary.ghs_hazard
+  module:
+    - svg_image_field
+id: taxonomy_term.ghs_hazard.pictogrammes_sgh
+targetEntityType: taxonomy_term
+bundle: ghs_hazard
+mode: pictogrammes_sgh
+content:
+  field_pictogramme:
+    type: svg_image_field_formatter
+    label: hidden
+    settings:
+      inline: true
+      apply_dimensions: true
+      width: 80
+      height: 80
+      enable_alt: true
+      enable_title: true
+      link: ''
+      force_fill: false
+      sanitize: '1'
+      sanitize_remote: 0
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  description: true
+  langcode: true
+  name: true
+  search_api_excerpt: true

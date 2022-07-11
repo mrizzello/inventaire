@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.substance.field_categorie_ghs
     - field.field.node.substance.field_fds
     - field.field.node.substance.field_formule_lineaire
     - field.field.node.substance.field_synonymes
@@ -20,6 +21,16 @@ content:
     weight: 4
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_categorie_ghs:
+    type: entity_reference_autocomplete
+    weight: 28
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_fds:
     type: file_generic

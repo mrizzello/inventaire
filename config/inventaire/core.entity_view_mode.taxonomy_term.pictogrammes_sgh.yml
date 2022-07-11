@@ -1,0 +1,10 @@
+uuid: 0b98508b-7711-43df-9c32-7c6d11f2d814
+langcode: fr
+status: true
+dependencies:
+  module:
+    - taxonomy
+id: taxonomy_term.pictogrammes_sgh
+label: 'Pictogrammes SGH'
+targetEntityType: taxonomy_term
+cache: true

@@ -21,6 +21,7 @@ module:
   filter: 0
   formblock: 0
   image: 0
+  inventaire_conteneur: 0
   language: 0
   link: 0
   locale: 0
@@ -37,6 +38,7 @@ module:
   path_alias: 0
   search_api: 0
   search_api_solr: 0
+  svg_image_field: 0
   system: 0
   taxonomy: 0
   text: 0
@@ -45,6 +47,7 @@ module:
   update: 0
   user: 0
   views_ui: 0
+  manage_display: 1
   views: 10
   minimal: 1000
 theme:

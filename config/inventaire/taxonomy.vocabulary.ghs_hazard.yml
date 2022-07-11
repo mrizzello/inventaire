@@ -1,0 +1,8 @@
+uuid: 82e6cb7f-8c0d-4c29-9a20-a3318c65a547
+langcode: fr
+status: true
+dependencies: {  }
+name: 'GHS hazard'
+vid: ghs_hazard
+description: ''
+weight: 0

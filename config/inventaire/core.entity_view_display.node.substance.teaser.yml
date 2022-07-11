@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.substance.field_categorie_ghs
     - field.field.node.substance.field_fds
     - field.field.node.substance.field_formule_lineaire
     - field.field.node.substance.field_synonymes
@@ -21,7 +22,9 @@ content:
     weight: 100
     region: content
 hidden:
+  field_categorie_ghs: true
   field_fds: true
   field_formule_lineaire: true
   field_synonymes: true
   langcode: true
+  search_api_excerpt: true

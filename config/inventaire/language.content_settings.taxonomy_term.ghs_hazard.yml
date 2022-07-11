@@ -1,0 +1,11 @@
+uuid: 3f238d35-f246-4fe2-95b3-fd27a0df3da0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.ghs_hazard
+id: taxonomy_term.ghs_hazard
+target_entity_type_id: taxonomy_term
+target_bundle: ghs_hazard
+default_langcode: site_default
+language_alterable: false

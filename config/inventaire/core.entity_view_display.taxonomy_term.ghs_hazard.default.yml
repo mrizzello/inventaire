@@ -1,0 +1,42 @@
+uuid: 7430ffda-6351-4b20-a221-51f4d2f739f4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.ghs_hazard.field_pictogramme
+    - taxonomy.vocabulary.ghs_hazard
+  module:
+    - svg_image_field
+    - text
+id: taxonomy_term.ghs_hazard.default
+targetEntityType: taxonomy_term
+bundle: ghs_hazard
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_pictogramme:
+    type: svg_image_field_formatter
+    label: above
+    settings:
+      inline: true
+      apply_dimensions: true
+      width: 80
+      height: 80
+      enable_alt: true
+      enable_title: true
+      link: ''
+      force_fill: false
+      sanitize: '1'
+      sanitize_remote: 0
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true
