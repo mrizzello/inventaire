@@ -5,10 +5,13 @@ dependencies:
   config:
     - field.storage.node.field_formule_lineaire
     - field.storage.node.field_synonymes
+    - field.storage.taxonomy_term.field_pictogramme
     - search_api.index.substances
     - user.role.authenticated
   module:
     - search_api
+    - svg_image_field
+    - taxonomy
     - user
 id: search
 label: Recherche
@@ -321,21 +324,22 @@ display:
             use_highlighting: false
             multi_type: separator
             multi_separator: ', '
-        nothing:
-          id: nothing
-          table: views
-          field: nothing
-          relationship: none
+        field_pictogramme:
+          id: field_pictogramme
+          table: search_api_entity_taxonomy_term
+          field: field_pictogramme
+          relationship: field_categorie_ghs
           group_type: group
           admin_label: ''
-          plugin_id: custom
-          label: ''
+          entity_type: taxonomy_term
+          plugin_id: search_api_field
+          label: SGH
           exclude: false
           alter:
-            alter_text: true
-            text: Conteneurs
-            make_link: true
-            path: '/node/{{nid}}'
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
             absolute: false
             external: false
             replace_spaces: false
@@ -362,14 +366,44 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: false
+          element_label_colon: true
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
           empty: ''
           hide_empty: false
           empty_zero: false
-          hide_alter_empty: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: svg_image_field_formatter
+          settings:
+            inline: false
+            apply_dimensions: true
+            width: 60
+            height: 60
+            enable_alt: false
+            enable_title: false
+            link: ''
+            force_fill: false
+            sanitize: 1
+            sanitize_remote: 0
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          field_rendering: true
+          fallback_handler: search_api
+          fallback_options:
+            link_to_item: false
+            use_highlighting: false
+            multi_type: separator
+            multi_separator: ', '
         search_api_operations:
           id: search_api_operations
           table: search_api_index_substances
@@ -420,6 +454,55 @@ display:
           empty_zero: false
           hide_alter_empty: true
           destination: false
+        nothing:
+          id: nothing
+          table: views
+          field: nothing
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: custom
+          label: ''
+          exclude: false
+          alter:
+            alter_text: true
+            text: Conteneurs
+            make_link: true
+            path: '/node/{{nid}}'
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: false
       pager:
         type: mini
         options:
@@ -578,7 +661,18 @@ display:
           skip_access: false
           preserve_facet_query_args: false
           query_tags: {  }
-      relationships: {  }
+      relationships:
+        field_categorie_ghs:
+          id: field_categorie_ghs
+          table: search_api_datasource_substances_entity_node
+          field: field_categorie_ghs
+          relationship: none
+          group_type: group
+          admin_label: 'Catégorie SGH : Terme de taxonomie'
+          entity_type: node
+          plugin_id: search_api
+          required: false
+          skip_access: false
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -594,6 +688,7 @@ display:
       tags:
         - 'config:field.storage.node.field_formule_lineaire'
         - 'config:field.storage.node.field_synonymes'
+        - 'config:field.storage.taxonomy_term.field_pictogramme'
         - 'config:search_api.index.substances'
   page_1:
     id: page_1
@@ -615,4 +710,5 @@ display:
       tags:
         - 'config:field.storage.node.field_formule_lineaire'
         - 'config:field.storage.node.field_synonymes'
+        - 'config:field.storage.taxonomy_term.field_pictogramme'
         - 'config:search_api.index.substances'
