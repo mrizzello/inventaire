@@ -1,0 +1,8 @@
+uuid: 4a2c1feb-78c5-46c5-b40e-1d680accf855
+langcode: fr
+status: true
+dependencies: {  }
+name: Localisation
+vid: localisation
+description: ''
+weight: 0

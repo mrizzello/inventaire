@@ -6,6 +6,7 @@ dependencies:
     - formblock
     - language
     - node
+    - system
   theme:
     - claro
 id: contentform
@@ -37,3 +38,7 @@ visibility:
       node: '@node.node_route_context:node'
     bundles:
       substance: substance
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/node/*/edit\r\n/node/*/delete\r\n/node/*/revisions"

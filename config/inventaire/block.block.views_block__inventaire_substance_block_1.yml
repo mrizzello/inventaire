@@ -1,4 +1,4 @@
-uuid: a16c17f4-34d6-457a-9468-64ea06d3a9e0
+uuid: 56a85f2e-0534-4671-96fe-83eb7b0beffa
 langcode: fr
 status: true
 dependencies:
@@ -6,6 +6,7 @@ dependencies:
     - views.view.inventaire_substance
   module:
     - node
+    - system
     - views
   theme:
     - claro
@@ -24,6 +25,10 @@ settings:
   views_label: ''
   items_per_page: none
 visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/node/*/edit\r\n/node/*/delete\r\n/node/*/revisions"
   'entity_bundle:node':
     id: 'entity_bundle:node'
     negate: false

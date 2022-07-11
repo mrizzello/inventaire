@@ -1,30 +1,17 @@
-uuid: bf6c2340-6a1c-404b-a5a1-d3b00ce58c8c
+uuid: 83935314-1a82-4abc-80a9-5d35ea7cfef3
 langcode: fr
 status: true
 dependencies:
   module:
     - node
-    - options
+    - taxonomy
 id: node.field_localisation
 field_name: field_localisation
 entity_type: node
-type: list_string
+type: entity_reference
 settings:
-  allowed_values:
-    -
-      value: chiap
-      label: 'Chimie - Armoire produits'
-    -
-      value: chiav
-      label: 'Chimie - Armoire ventilée'
-    -
-      value: chiv
-      label: 'Chimie - Vitrine salle prep.'
-    -
-      value: chial
-      label: 'Chimie - Armoire laboratoire'
-  allowed_values_function: ''
-module: options
+  target_type: taxonomy_term
+module: core
 locked: false
 cardinality: 1
 translatable: true

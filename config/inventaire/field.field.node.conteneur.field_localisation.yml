@@ -1,12 +1,11 @@
-uuid: 20ed36f8-be9a-4f04-bdb1-11f1ae942569
+uuid: 22111b38-657f-48ae-a3b6-3b7729687cdb
 langcode: fr
 status: true
 dependencies:
   config:
     - field.storage.node.field_localisation
     - node.type.conteneur
-  module:
-    - options
+    - taxonomy.vocabulary.localisation
 id: node.conteneur.field_localisation
 field_name: field_localisation
 entity_type: node
@@ -17,5 +16,14 @@ required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {  }
-field_type: list_string
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      localisation: localisation
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

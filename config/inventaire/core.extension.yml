@@ -9,6 +9,7 @@ module:
   ckeditor: 0
   config: 0
   config_translation: 0
+  cshs: 0
   datetime: 0
   datetime_range: 0
   dblog: 0
