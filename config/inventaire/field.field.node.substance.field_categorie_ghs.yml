@@ -10,7 +10,7 @@ id: node.substance.field_categorie_ghs
 field_name: field_categorie_ghs
 entity_type: node
 bundle: substance
-label: 'Catégorie SGH'
+label: 'Catégorie GHS'
 description: ''
 required: false
 translatable: false

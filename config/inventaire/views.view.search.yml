@@ -333,7 +333,7 @@ display:
           admin_label: ''
           entity_type: taxonomy_term
           plugin_id: search_api_field
-          label: SGH
+          label: GHS
           exclude: false
           alter:
             alter_text: false

@@ -11,7 +11,7 @@ id: taxonomy_term.ghs_hazard.field_pictogramme
 field_name: field_pictogramme
 entity_type: taxonomy_term
 bundle: ghs_hazard
-label: 'Pictogramme SGH'
+label: 'Pictogramme GHS'
 description: ''
 required: false
 translatable: false
