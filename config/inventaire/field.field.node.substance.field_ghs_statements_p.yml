@@ -1,0 +1,29 @@
+uuid: 3f8a7dc8-f606-4fa0-a75a-ed5d21350175
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ghs_statements_p
+    - node.type.substance
+    - taxonomy.vocabulary.ghs_statements_p
+id: node.substance.field_ghs_statements_p
+field_name: field_ghs_statements_p
+entity_type: node
+bundle: substance
+label: 'Conseils de prudence'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      ghs_statements_p: ghs_statements_p
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -12,7 +12,7 @@ dependencies:
 id: contentform
 theme: claro
 region: content
-weight: -1
+weight: 0
 provider: null
 plugin: formblock_node
 settings:

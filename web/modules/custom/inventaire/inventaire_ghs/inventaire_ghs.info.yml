@@ -1,0 +1,7 @@
+name: Inventaire GHS Statements
+type: module
+description: Import GHS Statements from file.
+package: Inventaire
+dependencies:
+  - inventaire_conteneur
+core_version_requirement: ^9 || ^10

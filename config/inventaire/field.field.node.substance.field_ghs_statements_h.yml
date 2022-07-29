@@ -1,0 +1,29 @@
+uuid: 2b2c4618-92a4-4060-a0f6-d6b2c80b5028
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ghs_statements_h
+    - node.type.substance
+    - taxonomy.vocabulary.ghs_statements_h
+id: node.substance.field_ghs_statements_h
+field_name: field_ghs_statements_h
+entity_type: node
+bundle: substance
+label: 'Mentions de danger'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      ghs_statements_h: ghs_statements_h
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

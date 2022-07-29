@@ -1,0 +1,7 @@
+inventaire_ghs.ghs_statement_form:
+  path: '/admin/config/system/inventaire/ghs-statements-form'
+  defaults:
+    _title: 'GHS Statements Management'
+    _form: 'Drupal\inventaire_ghs\Form\GhsStatementsForm'
+  requirements:
+    _permission: 'administer inventaire_conteneur configuration'

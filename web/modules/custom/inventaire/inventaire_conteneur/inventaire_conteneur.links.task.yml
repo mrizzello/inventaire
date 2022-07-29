@@ -1,0 +1,4 @@
+inventaire_conteneur.settings_form:
+  route_name: inventaire_conteneur.settings_form
+  base_route: inventaire_conteneur.settings_form
+  title: Inventaire

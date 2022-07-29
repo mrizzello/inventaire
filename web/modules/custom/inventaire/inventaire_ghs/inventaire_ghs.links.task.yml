@@ -1,0 +1,5 @@
+inventaire_ghs.ghs_statement_form:
+  route_name: inventaire_ghs.ghs_statement_form
+  base_route: inventaire_conteneur.settings_form
+  title: GHS Statements
+  weight: 20

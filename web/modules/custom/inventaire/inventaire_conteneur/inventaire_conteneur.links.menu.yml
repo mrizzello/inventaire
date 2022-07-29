@@ -1,6 +1,6 @@
 inventaire_conteneur.settings_form:
-  title: 'Inventaire Conteneur'
-  description: 'Configure Inventaire Conteneur.'
+  title: 'Inventaire'
+  description: 'Configure Inventaire features.'
   parent: system.admin_config_system
   route_name: inventaire_conteneur.settings_form
   weight: 10

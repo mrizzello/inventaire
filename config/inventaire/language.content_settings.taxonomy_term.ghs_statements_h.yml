@@ -1,0 +1,11 @@
+uuid: 424f1c91-1c9b-44a7-a187-af77b0ebe17a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.ghs_statements_h
+id: taxonomy_term.ghs_statements_h
+target_entity_type_id: taxonomy_term
+target_bundle: ghs_statements_h
+default_langcode: site_default
+language_alterable: false

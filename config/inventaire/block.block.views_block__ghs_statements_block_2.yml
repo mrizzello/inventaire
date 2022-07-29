@@ -1,23 +1,23 @@
-uuid: 56a85f2e-0534-4671-96fe-83eb7b0beffa
+uuid: b11da2cc-7bf9-490f-bebe-7b27b949610a
 langcode: fr
 status: true
 dependencies:
   config:
-    - views.view.inventaire_substance
+    - views.view.ghs_statements
   module:
     - node
     - system
     - views
   theme:
     - claro
-id: views_block__inventaire_substance_block_1
+id: views_block__ghs_statements_block_2
 theme: claro
 region: content
-weight: -1
+weight: -2
 provider: null
-plugin: 'views_block:inventaire_substance-block_1'
+plugin: 'views_block:ghs_statements-block_2'
 settings:
-  id: 'views_block:inventaire_substance-block_1'
+  id: 'views_block:ghs_statements-block_2'
   label: ''
   label_display: visible
   provider: views

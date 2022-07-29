@@ -1,0 +1,11 @@
+uuid: 88fef085-3d35-4394-89fd-c428c0ad81e8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.ghs_statements_p
+id: taxonomy_term.ghs_statements_p
+target_entity_type_id: taxonomy_term
+target_bundle: ghs_statements_p
+default_langcode: site_default
+language_alterable: false

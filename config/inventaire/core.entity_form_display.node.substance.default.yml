@@ -6,6 +6,8 @@ dependencies:
     - field.field.node.substance.field_categorie_ghs
     - field.field.node.substance.field_fds
     - field.field.node.substance.field_formule_lineaire
+    - field.field.node.substance.field_ghs_statements_h
+    - field.field.node.substance.field_ghs_statements_p
     - field.field.node.substance.field_synonymes
     - node.type.substance
   module:
@@ -44,6 +46,26 @@ content:
     weight: 26
     region: content
     settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_ghs_statements_h:
+    type: entity_reference_autocomplete
+    weight: 29
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_ghs_statements_p:
+    type: entity_reference_autocomplete
+    weight: 30
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }

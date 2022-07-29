@@ -1,0 +1,6 @@
+inventaire_ghs.ghs_statement_form:
+  title: 'GHS Statements'
+  description: 'GHS Statements import form'
+  parent: inventaire_conteneur.settings_form
+  route_name: inventaire_ghs.ghs_statement_form
+  weight: 10

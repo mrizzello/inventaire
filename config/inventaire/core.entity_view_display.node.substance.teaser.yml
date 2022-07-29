@@ -7,10 +7,12 @@ dependencies:
     - field.field.node.substance.field_categorie_ghs
     - field.field.node.substance.field_fds
     - field.field.node.substance.field_formule_lineaire
+    - field.field.node.substance.field_ghs_statements_h
+    - field.field.node.substance.field_ghs_statements_p
     - field.field.node.substance.field_synonymes
     - node.type.substance
   module:
-    - user
+    - manage_display
 id: node.substance.teaser
 targetEntityType: node
 bundle: substance
@@ -21,10 +23,23 @@ content:
     third_party_settings: {  }
     weight: 100
     region: content
+  title:
+    type: title
+    label: hidden
+    settings:
+      linked: true
+      tag: h2
+    third_party_settings: {  }
+    weight: -49
+    region: content
 hidden:
+  created: true
   field_categorie_ghs: true
   field_fds: true
   field_formule_lineaire: true
+  field_ghs_statements_h: true
+  field_ghs_statements_p: true
   field_synonymes: true
   langcode: true
   search_api_excerpt: true
+  uid: true

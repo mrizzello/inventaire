@@ -1,0 +1,7 @@
+inventaire_conteneur.settings_form:
+  path: '/admin/config/system/inventaire'
+  defaults:
+    _title: 'Inventaire settings'
+    _form: 'Drupal\inventaire_conteneur\Form\SettingsForm'
+  requirements:
+    _permission: 'administer inventaire_conteneur configuration'

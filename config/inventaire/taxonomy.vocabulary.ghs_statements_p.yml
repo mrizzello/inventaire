@@ -1,0 +1,8 @@
+uuid: b52d8263-fdc4-489f-a3c3-6729d32d9d0a
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Conseils de prudence'
+vid: ghs_statements_p
+description: ''
+weight: 0
