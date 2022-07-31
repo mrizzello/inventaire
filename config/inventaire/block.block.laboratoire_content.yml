@@ -1,0 +1,22 @@
+uuid: 41435e25-57a6-4bc7-9b3f-bd8768c0dd48
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - laboratoire
+_core:
+  default_config_hash: a0Yyx1GeyKarZ4T_yXQBR_ZFKnXiFLtxAb6gWLd8nr0
+id: laboratoire_content
+theme: laboratoire
+region: content
+weight: -4
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Contenu de la page principale'
+  label_display: '0'
+  provider: system
+visibility: {  }

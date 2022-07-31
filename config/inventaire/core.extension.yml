@@ -57,4 +57,5 @@ module:
   minimal: 1000
 theme:
   claro: 0
+  laboratoire: 0
 profile: minimal

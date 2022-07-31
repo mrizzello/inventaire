@@ -1,0 +1,22 @@
+uuid: f71e8de8-a6df-43f2-87c1-057e95b592d1
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - laboratoire
+_core:
+  default_config_hash: 2L0geP-ixCbCkEpW6BVF6H7vDUZN4ea07_Y9CociQm4
+id: laboratoire_secondary_local_tasks
+theme: laboratoire
+region: sidebar_first
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Onglets secondaires'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

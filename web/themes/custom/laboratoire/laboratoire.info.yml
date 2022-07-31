@@ -1,0 +1,8 @@
+name: Laboratoire
+type: theme
+description: Inventaire theme
+core_version_requirement: ^8 || ^9 || ^10
+base theme: claro
+libraries:
+  - claro/global-styling
+  - laboratoire/global-styling

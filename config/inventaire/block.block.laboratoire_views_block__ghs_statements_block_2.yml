@@ -1,0 +1,38 @@
+uuid: f665f28a-150c-47bc-b770-add99f6a9ba1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.ghs_statements
+  module:
+    - node
+    - system
+    - views
+  theme:
+    - laboratoire
+id: laboratoire_views_block__ghs_statements_block_2
+theme: laboratoire
+region: content
+weight: -2
+provider: null
+plugin: 'views_block:ghs_statements-block_2'
+settings:
+  id: 'views_block:ghs_statements-block_2'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: "/node/*/edit\r\n/node/*/delete\r\n/node/*/revisions"
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      substance: substance

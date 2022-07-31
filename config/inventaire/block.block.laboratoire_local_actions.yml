@@ -1,0 +1,20 @@
+uuid: a8567e7e-da10-435b-a770-9efb494d737c
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - laboratoire
+_core:
+  default_config_hash: CdXfDmRgAvms7EQovxxWPdYi0GitxeRbVtScYK16ZH0
+id: laboratoire_local_actions
+theme: laboratoire
+region: content
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Actions d''administration principales'
+  label_display: '0'
+  provider: core
+visibility: {  }

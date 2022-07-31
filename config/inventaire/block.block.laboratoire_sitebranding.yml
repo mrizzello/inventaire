@@ -1,0 +1,23 @@
+uuid: f0d116f5-78d5-401a-a7b0-14790b01733b
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - laboratoire
+id: laboratoire_sitebranding
+theme: laboratoire
+region: breadcrumb
+weight: -4
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  label_display: '0'
+  provider: system
+  use_site_logo: false
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

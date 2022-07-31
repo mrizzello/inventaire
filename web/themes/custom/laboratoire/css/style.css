@@ -1,0 +1,50 @@
+.block-system-branding-block .site-name a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 1;
+}
+.block-system-branding-block .site-slogan{
+    font-size: 0.8rem;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 1;
+}
+.region-breadcrumb{
+    border-bottom: 1px solid #55565b;
+    padding-bottom: 0.33rem;
+}
+.region-breadcrumb,
+.block-menu.menu--main .menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.block-menu.menu--main{
+    flex-grow: 1;
+}
+
+.block-menu.menu--main .menu{
+    justify-content: flex-end;
+}
+
+.block-menu.menu--main .menu .menu-item{
+    list-style-type: none;
+    border-bottom: 3px solid transparent;
+    padding: 0.1rem 0.67rem;
+}
+
+.block-menu.menu--main .menu .menu-item.menu-item--active-trail{
+    border-color:#003ecc;
+    background-color: white;
+}
+
+.block-menu.menu--main .menu .menu-item a{
+    text-decoration: none;
+}
+
+.block-menu.menu--main .menu .menu-item a.is-active{
+    color: #003ecc;
+}
