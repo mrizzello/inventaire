@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.base_field_override.node.substance.title
     - field.field.node.substance.field_categorie_ghs
     - field.field.node.substance.field_fds
     - field.field.node.substance.field_formule_lineaire
@@ -10,9 +11,183 @@ dependencies:
     - field.field.node.substance.field_ghs_statements_p
     - field.field.node.substance.field_synonymes
     - node.type.substance
+    - views.view.ghs_statements
+    - views.view.inventaire_substance
   module:
     - file
+    - formblock
+    - layout_builder
+    - layout_discovery
     - manage_display
+    - views
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+          column_widths: 50-50
+        components:
+          41965865-26e5-4ba5-9ef7-d4955203a8eb:
+            uuid: 41965865-26e5-4ba5-9ef7-d4955203a8eb
+            region: first
+            configuration:
+              id: 'field_block:node:substance:title'
+              label: 'n° CAS'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: inline
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          292781c0-46f2-4637-b765-46e99529a158:
+            uuid: 292781c0-46f2-4637-b765-46e99529a158
+            region: first
+            configuration:
+              id: 'field_block:node:substance:field_formule_lineaire'
+              label: 'Formule linéaire'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: inline
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          a7414fc7-41bc-44c2-8145-c0edb4b41375:
+            uuid: a7414fc7-41bc-44c2-8145-c0edb4b41375
+            region: first
+            configuration:
+              id: 'field_block:node:substance:field_synonymes'
+              label: Nom(s)
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: inline
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          968818af-1048-45fe-a0a6-6a473aa24bf7:
+            uuid: 968818af-1048-45fe-a0a6-6a473aa24bf7
+            region: first
+            configuration:
+              id: 'field_block:node:substance:field_categorie_ghs'
+              label: 'Catégorie GHS'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_entity_view
+                label: inline
+                settings:
+                  view_mode: pictogrammes_sgh
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          89bc8979-065c-47c3-9894-a3f9b90ac1e5:
+            uuid: 89bc8979-065c-47c3-9894-a3f9b90ac1e5
+            region: first
+            configuration:
+              id: 'field_block:node:substance:field_fds'
+              label: FDS
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: file_default
+                label: inline
+                settings:
+                  use_description_as_link_text: true
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          9b8654ad-f583-4e43-aa04-4891c6073a83:
+            uuid: 9b8654ad-f583-4e43-aa04-4891c6073a83
+            region: second
+            configuration:
+              id: 'views_block:ghs_statements-block_1'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          b38ae359-62a8-4e27-9967-448cf0810cc4:
+            uuid: b38ae359-62a8-4e27-9967-448cf0810cc4
+            region: second
+            configuration:
+              id: 'views_block:ghs_statements-block_2'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'Section 2'
+          context_mapping: {  }
+        components:
+          321abf9f-e9e7-4be7-940c-835da7b96a2a:
+            uuid: 321abf9f-e9e7-4be7-940c-835da7b96a2a
+            region: content
+            configuration:
+              id: 'views_block:inventaire_substance-block_1'
+              label: ''
+              label_display: visible
+              provider: views
+              context_mapping: {  }
+              views_label: ''
+              items_per_page: none
+            weight: 0
+            additional: {  }
+          08e08e9a-6cf3-4ac4-a8cc-2ed479d26d58:
+            uuid: 08e08e9a-6cf3-4ac4-a8cc-2ed479d26d58
+            region: content
+            configuration:
+              id: formblock_node
+              label: 'Ajouter un conteneur'
+              label_display: visible
+              provider: formblock
+              context_mapping: {  }
+              type: conteneur
+              form_mode: default
+              show_help: 0
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
 id: node.substance.default
 targetEntityType: node
 bundle: substance
