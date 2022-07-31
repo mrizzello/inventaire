@@ -48,3 +48,26 @@
 .block-menu.menu--main .menu .menu-item a.is-active{
     color: #003ecc;
 }
+
+.block-views-blockghs-statements-block-1 h2,
+.block-views-blockghs-statements-block-2 h2{
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 0;
+}
+.block-views-blockghs-statements-block-1 table,
+.block-views-blockghs-statements-block-2 table{
+    margin: 1rem 0;
+}
+.block-views-blockghs-statements-block-1 table p,
+.block-views-blockghs-statements-block-2 table p{
+    margin: 0;
+}
+.block-views-blockghs-statements-block-1 table th,
+.block-views-blockghs-statements-block-1 table td,
+.block-views-blockghs-statements-block-2 table th,
+.block-views-blockghs-statements-block-2 table td{
+    font-size: 0.8rem;
+    padding: 0.2rem;
+    height: inherit;
+}
