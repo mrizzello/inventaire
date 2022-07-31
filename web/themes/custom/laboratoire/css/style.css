@@ -71,3 +71,26 @@
     padding: 0.2rem;
     height: inherit;
 }
+
+.block-formblock-node h2{
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid transparent !important;
+    border-radius: 2px;
+    background-color: #003ecc;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1rem;
+    margin: inherit;
+    padding: 1rem;
+    margin-bottom: 0.67rem;
+}
+
+.block-formblock-node form{
+    display: none;
+    padding: 0 1.2rem;
+    border: 1px solid #919297;
+}
