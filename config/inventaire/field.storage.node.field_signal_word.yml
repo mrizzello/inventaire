@@ -1,0 +1,20 @@
+uuid: 5a5d66d0-e0f4-49ca-9208-cbb06d458d4e
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_signal_word
+field_name: field_signal_word
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.substance.field_formule_lineaire
     - field.field.node.substance.field_ghs_statements_h
     - field.field.node.substance.field_ghs_statements_p
+    - field.field.node.substance.field_signal_word
     - field.field.node.substance.field_synonymes
     - node.type.substance
   module:
@@ -26,7 +27,7 @@ content:
     third_party_settings: {  }
   field_categorie_ghs:
     type: entity_reference_autocomplete
-    weight: 28
+    weight: 12
     region: content
     settings:
       match_operator: CONTAINS
@@ -36,14 +37,14 @@ content:
     third_party_settings: {  }
   field_fds:
     type: file_generic
-    weight: 27
+    weight: 10
     region: content
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
   field_formule_lineaire:
     type: string_textfield
-    weight: 26
+    weight: 9
     region: content
     settings:
       size: 60
@@ -51,7 +52,7 @@ content:
     third_party_settings: {  }
   field_ghs_statements_h:
     type: entity_reference_autocomplete
-    weight: 29
+    weight: 13
     region: content
     settings:
       match_operator: CONTAINS
@@ -61,13 +62,19 @@ content:
     third_party_settings: {  }
   field_ghs_statements_p:
     type: entity_reference_autocomplete
-    weight: 30
+    weight: 14
     region: content
     settings:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  field_signal_word:
+    type: options_buttons
+    weight: 11
+    region: content
+    settings: {  }
     third_party_settings: {  }
   field_synonymes:
     type: string_textfield
@@ -79,7 +86,7 @@ content:
     third_party_settings: {  }
   langcode:
     type: language_select
-    weight: 2
+    weight: 1
     region: content
     settings:
       include_locked: true
@@ -113,7 +120,7 @@ content:
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 1
+    weight: 0
     region: content
     settings:
       size: 60

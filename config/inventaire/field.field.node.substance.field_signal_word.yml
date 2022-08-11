@@ -1,16 +1,16 @@
-uuid: 2b2c4618-92a4-4060-a0f6-d6b2c80b5028
+uuid: 0e273a87-c261-45eb-ab38-e4f52e0fb0c9
 langcode: fr
 status: true
 dependencies:
   config:
-    - field.storage.node.field_ghs_statements_h
+    - field.storage.node.field_signal_word
     - node.type.substance
-    - taxonomy.vocabulary.ghs_statements_h
-id: node.substance.field_ghs_statements_h
-field_name: field_ghs_statements_h
+    - taxonomy.vocabulary.signal_word
+id: node.substance.field_signal_word
+field_name: field_signal_word
 entity_type: node
 bundle: substance
-label: 'Mentions de danger (phrases H)'
+label: 'Mention d''avertissement'
 description: ''
 required: false
 translatable: false
@@ -20,7 +20,7 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      ghs_statements_h: ghs_statements_h
+      signal_word: signal_word
     sort:
       field: name
       direction: asc

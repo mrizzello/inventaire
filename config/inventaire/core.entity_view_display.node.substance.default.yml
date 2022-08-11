@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.substance.field_formule_lineaire
     - field.field.node.substance.field_ghs_statements_h
     - field.field.node.substance.field_ghs_statements_p
+    - field.field.node.substance.field_signal_word
     - field.field.node.substance.field_synonymes
     - node.type.substance
     - views.view.ghs_statements
@@ -106,26 +107,7 @@ third_party_settings:
                 settings:
                   view_mode: pictogrammes_sgh
                 third_party_settings: {  }
-            weight: 3
-            additional: {  }
-          89bc8979-065c-47c3-9894-a3f9b90ac1e5:
-            uuid: 89bc8979-065c-47c3-9894-a3f9b90ac1e5
-            region: first
-            configuration:
-              id: 'field_block:node:substance:field_fds'
-              label: FDS
-              label_display: '0'
-              provider: layout_builder
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-              formatter:
-                type: file_default
-                label: inline
-                settings:
-                  use_description_as_link_text: true
-                third_party_settings: {  }
-            weight: 4
+            weight: 5
             additional: {  }
           9b8654ad-f583-4e43-aa04-4891c6073a83:
             uuid: 9b8654ad-f583-4e43-aa04-4891c6073a83
@@ -152,6 +134,44 @@ third_party_settings:
               views_label: ''
               items_per_page: none
             weight: 1
+            additional: {  }
+          a56408b8-515c-4153-8c2e-578b977c2ba9:
+            uuid: a56408b8-515c-4153-8c2e-578b977c2ba9
+            region: first
+            configuration:
+              id: 'field_block:node:substance:field_signal_word'
+              label: 'Mention d''avertissement'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: inline
+                settings:
+                  link: false
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          89bc8979-065c-47c3-9894-a3f9b90ac1e5:
+            uuid: 89bc8979-065c-47c3-9894-a3f9b90ac1e5
+            region: first
+            configuration:
+              id: 'field_block:node:substance:field_fds'
+              label: FDS
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: file_default
+                label: inline
+                settings:
+                  use_description_as_link_text: true
+                third_party_settings: {  }
+            weight: 3
             additional: {  }
         third_party_settings: {  }
       -
@@ -218,6 +238,14 @@ content:
     third_party_settings: {  }
     weight: 2
     region: content
+  field_signal_word:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 6
+    region: first
   field_synonymes:
     type: string
     label: inline

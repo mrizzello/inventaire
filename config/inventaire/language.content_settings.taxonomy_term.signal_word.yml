@@ -1,0 +1,11 @@
+uuid: 2f72e4a8-4982-42d0-8a88-0bc8baf7ff6b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.signal_word
+id: taxonomy_term.signal_word
+target_entity_type_id: taxonomy_term
+target_bundle: signal_word
+default_langcode: site_default
+language_alterable: false

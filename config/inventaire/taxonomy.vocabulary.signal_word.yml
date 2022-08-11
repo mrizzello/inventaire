@@ -1,0 +1,8 @@
+uuid: e0bc7fb1-4704-4410-af2c-44239f8a5615
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Mention d’avertissement'
+vid: signal_word
+description: ''
+weight: 0

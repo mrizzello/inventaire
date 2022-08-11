@@ -10,7 +10,7 @@ id: node.substance.field_ghs_statements_p
 field_name: field_ghs_statements_p
 entity_type: node
 bundle: substance
-label: 'Conseils de prudence'
+label: 'Conseils de prudence (phrases P)'
 description: ''
 required: false
 translatable: false
