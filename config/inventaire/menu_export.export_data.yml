@@ -11,7 +11,8 @@
     value: menu_link_content
   revision_created:
     value: '1657043335'
-  revision_user: false
+  revision_user:
+    target_id: '0'
   revision_log_message: false
   enabled:
     value: '1'
@@ -29,12 +30,12 @@
   rediscover:
     value: '1'
   weight:
-    value: '-49'
+    value: '-48'
   expanded:
     value: '0'
   parent: false
   changed:
-    value: '1657381593'
+    value: '1660233950'
   default_langcode:
     value: '1'
   revision_default:
@@ -54,13 +55,16 @@
     value: menu_link_content
   revision_created:
     value: '1657043361'
-  revision_user: false
-  revision_log_message: false
+  revision_user:
+    target_id: '0'
+  revision_log_message:
+    value: ''
   enabled:
     value: '1'
   title:
     value: Recherche
-  description: false
+  description:
+    value: ''
   menu_name:
     value: main
   link:
@@ -75,7 +79,8 @@
     value: '-50'
   expanded:
     value: '0'
-  parent: false
+  parent:
+    value: ''
   changed:
     value: '1657381593'
   default_langcode:
@@ -97,7 +102,8 @@
     value: menu_link_content
   revision_created:
     value: '1657381963'
-  revision_user: false
+  revision_user:
+    target_id: '0'
   revision_log_message: false
   enabled:
     value: '1'
@@ -115,12 +121,55 @@
   rediscover:
     value: '1'
   weight:
-    value: '0'
+    value: '-47'
   expanded:
     value: '0'
   parent: false
   changed:
-    value: '1657381963'
+    value: '1660233950'
+  default_langcode:
+    value: '1'
+  revision_default:
+    value: '1'
+  revision_translation_affected:
+    value: '1'
+4:
+  id:
+    value: '4'
+  uuid:
+    value: 5b85644d-c731-45c4-8786-97fe9501d190
+  revision_id:
+    value: '4'
+  langcode:
+    value: fr
+  bundle:
+    value: menu_link_content
+  revision_created:
+    value: '1660233945'
+  revision_user: false
+  revision_log_message: false
+  enabled:
+    value: '1'
+  title:
+    value: 'Nouvelle substance'
+  description: false
+  menu_name:
+    value: main
+  link:
+    uri: 'internal:/node/add/substance'
+    title: ''
+    options: {  }
+  external:
+    value: '0'
+  rediscover:
+    value: '1'
+  weight:
+    value: '-49'
+  expanded:
+    value: '0'
+  parent: false
+  changed:
+    value: '1660233950'
   default_langcode:
     value: '1'
   revision_default:
