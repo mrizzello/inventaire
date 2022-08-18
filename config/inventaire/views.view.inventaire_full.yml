@@ -1,4 +1,4 @@
-uuid: b6e3bdc3-0edc-4b05-a338-bc308c25d05f
+uuid: cefa5f0a-95be-46b0-93ca-b2dfe182db40
 langcode: fr
 status: true
 dependencies:
@@ -6,10 +6,11 @@ dependencies:
     - field.storage.node.field_date_out
     - field.storage.node.field_date_reception
     - field.storage.node.field_file
+    - field.storage.node.field_formule_lineaire
     - field.storage.node.field_localisation
     - field.storage.node.field_masse
     - field.storage.node.field_out
-    - field.storage.node.field_substance
+    - field.storage.node.field_synonymes
     - field.storage.node.field_volume
     - node.type.conteneur
   module:
@@ -18,8 +19,8 @@ dependencies:
     - node
     - options
     - user
-id: inventaire_substance
-label: 'Inventaire substance'
+id: inventaire_full
+label: 'Inventaire complet'
 module: views
 description: ''
 tag: ''
@@ -32,15 +33,17 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Inventaire substance'
+      title: 'Inventaire complet'
       fields:
-        field_substance:
-          id: field_substance
-          table: node__field_substance
-          field: field_substance
-          relationship: none
+        title_1:
+          id: title_1
+          table: node_field_data
+          field: title
+          relationship: field_substance
           group_type: group
           admin_label: ''
+          entity_type: node
+          entity_field: title
           plugin_id: field
           label: Substance
           exclude: false
@@ -75,7 +78,7 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: false
+          element_label_colon: true
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -83,11 +86,11 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_label
+          click_sort_column: value
+          type: string
           settings:
-            link: false
-          group_column: target_id
+            link_to_entity: true
+          group_column: value
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -97,17 +100,15 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        uid:
-          id: uid
-          table: node_field_data
-          field: uid
-          relationship: none
+        field_formule_lineaire:
+          id: field_formule_lineaire
+          table: node__field_formule_lineaire
+          field: field_formule_lineaire
+          relationship: field_substance
           group_type: group
           admin_label: ''
-          entity_type: node
-          entity_field: uid
           plugin_id: field
-          label: Utilisateur
+          label: 'Formule linéaire'
           exclude: false
           alter:
             alter_text: false
@@ -140,7 +141,7 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: false
+          element_label_colon: true
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -148,11 +149,74 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_label
+          click_sort_column: value
+          type: string
           settings:
-            link: false
-          group_column: target_id
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        field_synonymes:
+          id: field_synonymes
+          table: node__field_synonymes
+          field: field_synonymes
+          relationship: field_substance
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: Nom(s)
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -203,7 +267,7 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: false
+          element_label_colon: true
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -330,7 +394,7 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: false
+          element_label_colon: true
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -343,7 +407,7 @@ display:
           settings:
             thousand_separator: ''
             decimal_separator: .
-            scale: 0
+            scale: 2
             prefix_suffix: true
           group_column: value
           group_columns: {  }
@@ -396,7 +460,7 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: false
+          element_label_colon: true
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -409,7 +473,7 @@ display:
           settings:
             thousand_separator: ''
             decimal_separator: .
-            scale: 0
+            scale: 2
             prefix_suffix: true
           group_column: value
           group_columns: {  }
@@ -429,7 +493,7 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: field
-          label: Réception
+          label: 'Date de réception'
           exclude: false
           alter:
             alter_text: false
@@ -462,75 +526,11 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: false
+          element_label_colon: true
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
           empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: datetime_default
-          settings:
-            timezone_override: ''
-            format_type: date_conteneurs
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-        field_date_out:
-          id: field_date_out
-          table: node__field_date_out
-          field: field_date_out
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: Sortie
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: '-'
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
@@ -590,7 +590,7 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: false
+          element_label_colon: true
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -614,16 +614,15 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        operations:
-          id: operations
-          table: node
-          field: operations
+        field_date_out:
+          id: field_date_out
+          table: node__field_date_out
+          field: field_date_out
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: node
-          plugin_id: entity_operations
-          label: Actions
+          plugin_id: field
+          label: 'Date de sortie'
           exclude: false
           alter:
             alter_text: false
@@ -656,7 +655,7 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: false
+          element_label_colon: true
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -664,19 +663,32 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          destination: false
+          click_sort_column: value
+          type: datetime_default
+          settings:
+            timezone_override: ''
+            format_type: date_conteneurs
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
       pager:
         type: none
         options:
           offset: 0
-          items_per_page: 0
       exposed_form:
         type: basic
         options:
           submit_button: Appliquer
           reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: Réinitialiser
+          exposed_sorts_label: 'Trier par'
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
@@ -687,21 +699,23 @@ display:
       cache:
         type: tag
         options: {  }
-      empty:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
+      empty: {  }
+      sorts:
+        title:
+          id: title
+          table: node_field_revision
+          field: title
+          relationship: field_substance
           group_type: group
           admin_label: ''
-          plugin_id: text
-          empty: true
-          content:
-            value: 'Pas de conteneurs enregistrés pour cette substance.'
-            format: plain_text
-          tokenize: false
-      sorts:
+          entity_type: node
+          entity_field: title
+          plugin_id: standard
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
         field_out_value:
           id: field_out_value
           table: node__field_out
@@ -729,55 +743,7 @@ display:
             field_identifier: ''
           exposed: false
           granularity: second
-        field_date_out_value:
-          id: field_date_out_value
-          table: node__field_date_out
-          field: field_date_out_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: datetime
-          order: DESC
-          expose:
-            label: ''
-            field_identifier: ''
-          exposed: false
-          granularity: second
-      arguments:
-        field_substance_target_id:
-          id: field_substance_target_id
-          table: node__field_substance
-          field: field_substance_target_id
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: numeric
-          default_action: default
-          exception:
-            value: all
-            title_enable: false
-            title: All
-          title_enable: false
-          title: ''
-          default_argument_type: node
-          default_argument_options: {  }
-          default_argument_skip_url: false
-          summary_options:
-            base_path: ''
-            count: true
-            override: false
-            items_per_page: 25
-          summary:
-            sort_order: asc
-            number_of_records: 0
-            format: default_summary
-          specify_validation: false
-          validate:
-            type: none
-            fail: 'not found'
-          validate_options: {  }
-          break_phrase: false
-          not: false
+      arguments: {  }
       filters:
         status:
           id: status
@@ -811,28 +777,33 @@ display:
           row_class: 'field-out-{{ field_out }}'
           default_row_class: true
           columns:
-            field_substance: field_substance
-            uid: uid
+            title_1: title_1
+            field_formule_lineaire: field_formule_lineaire
+            field_synonymes: field_synonymes
             field_file: field_file
             field_localisation: field_localisation
             field_masse: field_masse
             field_volume: field_volume
             field_date_reception: field_date_reception
-            field_date_out: field_date_out
             field_out: field_out
-            operations: operations
+            field_date_out: field_date_out
           default: '-1'
           info:
-            field_substance:
+            title_1:
               sortable: false
               default_sort_order: asc
               align: ''
               separator: ''
               empty_column: false
               responsive: ''
-            uid:
+            field_formule_lineaire:
               sortable: false
               default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_synonymes:
               align: ''
               separator: ''
               empty_column: false
@@ -872,13 +843,6 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
-            field_date_out:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
             field_out:
               sortable: false
               default_sort_order: asc
@@ -886,7 +850,9 @@ display:
               separator: ''
               empty_column: false
               responsive: ''
-            operations:
+            field_date_out:
+              sortable: false
+              default_sort_order: asc
               align: ''
               separator: ''
               empty_column: false
@@ -907,7 +873,16 @@ display:
           distinct: false
           replica: false
           query_tags: {  }
-      relationships: {  }
+      relationships:
+        field_substance:
+          id: field_substance
+          table: node__field_substance
+          field: field_substance
+          relationship: none
+          group_type: group
+          admin_label: 'field_substance: Content'
+          plugin_id: standard
+          required: false
       header: {  }
       footer: {  }
       display_extenders: {  }
@@ -916,39 +891,40 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url
         - 'user.node_grants:view'
         - user.permissions
       tags:
         - 'config:field.storage.node.field_date_out'
         - 'config:field.storage.node.field_date_reception'
         - 'config:field.storage.node.field_file'
+        - 'config:field.storage.node.field_formule_lineaire'
         - 'config:field.storage.node.field_localisation'
         - 'config:field.storage.node.field_masse'
         - 'config:field.storage.node.field_out'
-        - 'config:field.storage.node.field_substance'
+        - 'config:field.storage.node.field_synonymes'
         - 'config:field.storage.node.field_volume'
-  block_1:
-    id: block_1
-    display_title: Block
-    display_plugin: block
+  page_1:
+    id: page_1
+    display_title: Page
+    display_plugin: page
     position: 1
     display_options:
       display_extenders: {  }
+      path: inventaire-complet
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url
         - 'user.node_grants:view'
         - user.permissions
       tags:
         - 'config:field.storage.node.field_date_out'
         - 'config:field.storage.node.field_date_reception'
         - 'config:field.storage.node.field_file'
+        - 'config:field.storage.node.field_formule_lineaire'
         - 'config:field.storage.node.field_localisation'
         - 'config:field.storage.node.field_masse'
         - 'config:field.storage.node.field_out'
-        - 'config:field.storage.node.field_substance'
+        - 'config:field.storage.node.field_synonymes'
         - 'config:field.storage.node.field_volume'
