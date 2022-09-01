@@ -90,25 +90,6 @@ third_party_settings:
                 third_party_settings: {  }
             weight: 2
             additional: {  }
-          968818af-1048-45fe-a0a6-6a473aa24bf7:
-            uuid: 968818af-1048-45fe-a0a6-6a473aa24bf7
-            region: first
-            configuration:
-              id: 'field_block:node:substance:field_categorie_ghs'
-              label: 'Catégorie GHS'
-              label_display: '0'
-              provider: layout_builder
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-              formatter:
-                type: entity_reference_entity_view
-                label: inline
-                settings:
-                  view_mode: pictogrammes_sgh
-                third_party_settings: {  }
-            weight: 5
-            additional: {  }
           9b8654ad-f583-4e43-aa04-4891c6073a83:
             uuid: 9b8654ad-f583-4e43-aa04-4891c6073a83
             region: second
@@ -172,6 +153,25 @@ third_party_settings:
                   use_description_as_link_text: true
                 third_party_settings: {  }
             weight: 3
+            additional: {  }
+          968818af-1048-45fe-a0a6-6a473aa24bf7:
+            uuid: 968818af-1048-45fe-a0a6-6a473aa24bf7
+            region: first
+            configuration:
+              id: 'field_block:node:substance:field_categorie_ghs'
+              label: 'Catégorie GHS'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_entity_view
+                label: inline
+                settings:
+                  view_mode: pictogrammes_sgh
+                third_party_settings: {  }
+            weight: 5
             additional: {  }
         third_party_settings: {  }
       -
