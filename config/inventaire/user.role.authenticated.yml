@@ -2,12 +2,8 @@ uuid: f244515c-ca97-41c6-8465-63aaf5ed6acd
 langcode: fr
 status: true
 dependencies:
-  config:
-    - node.type.conteneur
-    - node.type.substance
   module:
     - media
-    - node
     - system
 _core:
   default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
@@ -18,10 +14,4 @@ is_admin: false
 permissions:
   - 'access content'
   - 'change own username'
-  - 'create conteneur content'
-  - 'create substance content'
-  - 'delete any conteneur content'
-  - 'delete any substance content'
-  - 'edit any conteneur content'
-  - 'edit any substance content'
   - 'view media'

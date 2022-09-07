@@ -1,0 +1,20 @@
+uuid: 519f8c7c-4843-42ac-badd-2cd984c90909
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.conteneur
+    - node.type.substance
+  module:
+    - node
+id: manager
+label: Manager
+weight: 2
+is_admin: null
+permissions:
+  - 'create conteneur content'
+  - 'create substance content'
+  - 'delete any conteneur content'
+  - 'delete any substance content'
+  - 'edit any conteneur content'
+  - 'edit any substance content'
