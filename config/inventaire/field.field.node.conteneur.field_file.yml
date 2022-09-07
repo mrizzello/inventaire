@@ -11,7 +11,7 @@ id: node.conteneur.field_file
 field_name: field_file
 entity_type: node
 bundle: conteneur
-label: File
+label: 'File d''achat'
 description: ''
 required: true
 translatable: false
