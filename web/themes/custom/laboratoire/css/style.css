@@ -1,100 +1,109 @@
-.block-system-branding-block .site-name a{
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.6rem;
-    line-height: 1;
+.block-system-branding-block .site-name a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 1;
 }
-.block-system-branding-block .site-slogan{
-    font-size: 0.8rem;
-    font-style: italic;
-    font-weight: bold;
-    line-height: 1;
+.block-system-branding-block .site-slogan {
+  font-size: 0.8rem;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 1;
 }
-.region-breadcrumb{
-    border-bottom: 1px solid #55565b;
-    padding-bottom: 0.33rem;
+.region-breadcrumb {
+  border-bottom: 1px solid #55565b;
+  padding-bottom: 0.33rem;
 }
 .region-breadcrumb,
-.block-menu.menu--main .menu{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
+.block-menu.menu--main .menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
-.block-menu.menu--main{
-    flex-grow: 1;
+.block-menu.menu--main {
+  flex-grow: 1;
 }
 
-.block-menu.menu--main .menu{
-    justify-content: flex-end;
+.block-menu.menu--main .menu {
+  justify-content: flex-end;
 }
 
-.block-menu.menu--main .menu .menu-item{
-    list-style-type: none;
-    border-bottom: 3px solid transparent;
-    padding: 0.1rem 0.67rem;
+.block-menu.menu--main .menu .menu-item {
+  list-style-type: none;
+  border-bottom: 3px solid transparent;
+  padding: 0.1rem 0.67rem;
 }
 
-.block-menu.menu--main .menu .menu-item.menu-item--active-trail{
-    border-color:#003ecc;
-    background-color: white;
+.block-menu.menu--main .menu .menu-item.menu-item--active-trail {
+  border-color: #003ecc;
+  background-color: white;
 }
 
-.block-menu.menu--main .menu .menu-item a{
-    text-decoration: none;
+.block-menu.menu--main .menu .menu-item a {
+  text-decoration: none;
 }
 
-.block-menu.menu--main .menu .menu-item a.is-active{
-    color: #003ecc;
+.block-menu.menu--main .menu .menu-item a.is-active {
+  color: #003ecc;
 }
 
 .block-views-blockghs-statements-block-1 h2,
-.block-views-blockghs-statements-block-2 h2{
-    margin: 0;
-    font-size: 0.9rem;
-    line-height: 0;
+.block-views-blockghs-statements-block-2 h2 {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 0;
 }
 .block-views-blockghs-statements-block-1 table,
-.block-views-blockghs-statements-block-2 table{
-    margin: 1rem 0;
+.block-views-blockghs-statements-block-2 table {
+  margin: 1rem 0;
 }
 .block-views-blockghs-statements-block-1 table p,
-.block-views-blockghs-statements-block-2 table p{
-    margin: 0;
+.block-views-blockghs-statements-block-2 table p {
+  margin: 0;
 }
 .block-views-blockghs-statements-block-1 table th,
 .block-views-blockghs-statements-block-1 table td,
 .block-views-blockghs-statements-block-2 table th,
-.block-views-blockghs-statements-block-2 table td{
-    font-size: 0.8rem;
-    padding: 0.2rem;
-    height: inherit;
+.block-views-blockghs-statements-block-2 table td {
+  font-size: 0.8rem;
+  padding: 0.2rem;
+  height: inherit;
 }
 
-.block-formblock-node h2{
-    display: inline-block;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-    border: 1px solid transparent !important;
-    border-radius: 2px;
-    background-color: #003ecc;
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 1rem;
-    margin: inherit;
-    padding: 1rem;
-    margin-bottom: 0.67rem;
+.block-formblock-node h2 {
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid transparent !important;
+  border-radius: 2px;
+  background-color: #003ecc;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1rem;
+  margin: inherit;
+  padding: 1rem;
+  margin-bottom: 0.67rem;
 }
 
-.block-formblock-node form{
-    display: none;
-    padding: 0 1.2rem;
-    border: 1px solid #919297;
+.block-formblock-node form {
+  display: none;
+  padding: 0 1.2rem;
+  border: 1px solid #919297;
 }
 
-.field-out-Yes{
-    background-color: #f3f4f9;
+.field-out-Yes {
+  background-color: #f3f4f9;
+}
+
+.field--name-field-categorie-ghs .field__items {
+  clear: both;
+}
+
+.field--name-field-categorie-ghs .field__items .field__item {
+  float: left;
+  margin-right: 0.2rem;
 }
