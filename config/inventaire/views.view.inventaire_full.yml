@@ -13,11 +13,13 @@ dependencies:
     - field.storage.node.field_synonymes
     - field.storage.node.field_volume
     - node.type.conteneur
+    - taxonomy.vocabulary.localisation
   module:
     - cshs
     - datetime
     - node
     - options
+    - taxonomy
     - user
 id: inventaire_full
 label: 'Inventaire complet'
@@ -770,6 +772,142 @@ display:
           expose:
             operator_limit_selection: false
             operator_list: {  }
+        field_file_value:
+          id: field_file_value
+          table: node__field_file
+          field: field_file_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: list_field
+          operator: or
+          value: {  }
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_file_value_op
+            label: 'File d''achat'
+            description: ''
+            use_operator: false
+            operator: field_file_value_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_file_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              manager: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+        field_localisation_target_id:
+          id: field_localisation_target_id
+          table: node__field_localisation
+          field: field_localisation_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value: null
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_localisation_target_id_op
+            label: Localisation
+            description: ''
+            use_operator: false
+            operator: field_localisation_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_localisation_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              manager: '0'
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: false
+          vid: localisation
+          type: cshs
+          hierarchy: false
+          limit: true
+          error_message: true
+          save_lineage: false
+          force_deepest: false
+          parent: null
+          level_labels: ''
+          hierarchy_depth: 0
+          required_depth: 0
+          none_label: '- Please select -'
+        field_out_value:
+          id: field_out_value
+          table: node__field_out
+          field: field_out_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: boolean
+          operator: '='
+          value: All
+          group: 1
+          exposed: true
+          expose:
+            operator_id: ''
+            label: 'Sorti de l''inventaire'
+            description: ''
+            use_operator: false
+            operator: field_out_value_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_out_value
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              manager: '0'
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
       style:
         type: table
         options:
@@ -891,6 +1029,8 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
+        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:
@@ -916,6 +1056,8 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url
+        - user
         - 'user.node_grants:view'
         - user.permissions
       tags:

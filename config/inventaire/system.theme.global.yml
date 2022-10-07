@@ -12,6 +12,6 @@ features:
   favicon: true
   node_user_picture: false
 logo:
-  path: ''
+  path: themes/custom/laboratoire/logo.webp
   url: ''
-  use_default: true
+  use_default: false
