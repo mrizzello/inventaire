@@ -1,3 +1,20 @@
+a{
+  color: #1F2A54;
+  text-decoration: underline;
+}
+
+.site-logo img {
+  width: 12em;
+}
+
+.content-header{
+  background-color: transparent;
+}
+
+#block-laboratoire-primary-local-tasks {
+  background-color: #f3f4f9;
+}
+
 .block-system-branding-block .site-name a {
   text-decoration: none;
   font-weight: bold;
