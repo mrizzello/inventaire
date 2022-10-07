@@ -61,7 +61,7 @@ field_settings:
     label: 'N° CAS'
     datasource_id: 'entity:node'
     property_path: title
-    type: text
+    type: 'solr_text_custom:ngramstring'
     dependencies:
       module:
         - node
@@ -69,7 +69,7 @@ field_settings:
     label: 'Formule linéaire'
     datasource_id: 'entity:node'
     property_path: field_formule_lineaire
-    type: text
+    type: 'solr_text_custom:ngramstring'
     dependencies:
       config:
         - field.storage.node.field_formule_lineaire
@@ -77,7 +77,7 @@ field_settings:
     label: Nom(s)
     datasource_id: 'entity:node'
     property_path: field_synonymes
-    type: text
+    type: 'solr_text_custom:ngramstring'
     dependencies:
       config:
         - field.storage.node.field_synonymes
