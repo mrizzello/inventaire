@@ -571,7 +571,7 @@ display:
           expose:
             operator_id: search_api_fulltext_op
             label: 'Recherche par n° CAS, Nom, formule linéaire'
-            description: ''
+            description: '<a href="/inventaire-complet">Recherche dans les conteneurs</a>'
             use_operator: false
             operator: search_api_fulltext_op
             operator_limit_selection: false
@@ -583,6 +583,7 @@ display:
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
+              manager: '0'
             expose_fields: false
             placeholder: ''
             searched_fields_id: search_api_fulltext_searched_fields

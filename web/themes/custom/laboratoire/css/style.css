@@ -1,8 +1,15 @@
+.page-wrapper *:focus, .ui-dialog *:focus{
+  box-shadow: none;
+}
 a{
   color: #1F2A54;
   text-decoration: underline;
+  outline : none;
 }
 
+.site-logo {
+  display: block;
+}
 .site-logo img {
   width: 12em;
 }
