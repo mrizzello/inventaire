@@ -7,6 +7,11 @@ a{
   outline : none;
 }
 
+.page-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
 .site-logo {
   display: block;
 }
