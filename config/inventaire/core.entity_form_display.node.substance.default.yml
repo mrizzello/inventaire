@@ -26,14 +26,10 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_categorie_ghs:
-    type: entity_reference_autocomplete
+    type: options_buttons
     weight: 12
     region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
   field_fds:
     type: file_generic

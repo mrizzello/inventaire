@@ -2,8 +2,6 @@ uuid: df67cd27-3517-466c-8802-959580c64e34
 langcode: fr
 status: true
 dependencies:
-  module:
-    - system
   theme:
     - laboratoire
 _core:
@@ -19,8 +17,4 @@ settings:
   label: 'Titre de page'
   label_display: '0'
   provider: core
-visibility:
-  request_path:
-    id: request_path
-    negate: true
-    pages: '<front>'
+visibility: {  }

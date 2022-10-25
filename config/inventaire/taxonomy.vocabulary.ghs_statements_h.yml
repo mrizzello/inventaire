@@ -2,7 +2,7 @@ uuid: d2c0cff5-fef3-4ddc-98d5-024adfcabe9f
 langcode: fr
 status: true
 dependencies: {  }
-name: 'Mentions de danger (phrases P)'
+name: 'Mentions de danger (phrases H)'
 vid: ghs_statements_h
 description: ''
 weight: 0
