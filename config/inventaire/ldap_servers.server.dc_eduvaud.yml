@@ -11,7 +11,7 @@ timeout: 10
 encryption: none
 weight: null
 bind_method: service_account
-binddn: SVC-GYLC-bddtm
+binddn: dummy-username
 bindpw: dummy-password
 basedn:
   - 'OU=Teachers,OU=Users,OU=GYLC,OU=EDU,DC=dgep,DC=edu-vaud,DC=ch'
