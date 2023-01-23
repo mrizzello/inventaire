@@ -1,0 +1,26 @@
+_core:
+  default_config_hash: 9DgabkLztscclWQDjei_mAOpxP6xdbp_Iu5L5z6Nsbg
+langcode: fr
+sids:
+  dc_eduvaud: dc_eduvaud
+authenticationMode: mixed
+loginUIUsernameTxt: 'Entrez votre identifiant eduvaud (p#####)'
+loginUIPasswordTxt: 'Entrez le mot de passe qui accompagne votre identifiant.'
+ldapUserHelpLinkUrl: ''
+ldapUserHelpLinkText: ''
+emailOption: disable
+emailUpdate: update_notify
+emailTemplateHandling: none
+emailTemplate: '@username@example.com'
+emailTemplateUsageResolveConflict: false
+emailTemplateUsageNeverUpdate: false
+emailTemplateUsagePromptUser: false
+emailTemplateUsageRedirectOnLogin: false
+emailTemplateUsagePromptRegex: '.*@example\\.com'
+passwordOption: hide
+allowOnlyIfTextInDn:
+  - ou=teachers
+  - ou=gylc
+excludeIfTextInDn: {  }
+excludeIfNoAuthorizations: false
+skipAdministrators: true

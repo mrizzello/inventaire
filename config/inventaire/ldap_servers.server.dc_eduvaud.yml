@@ -1,0 +1,38 @@
+uuid: b8e41f2a-ea72-49e2-990a-68e1653e4694
+langcode: fr
+status: true
+dependencies: {  }
+id: dc_eduvaud
+label: DC-EDUVAUD
+type: default
+address: 10.227.96.25
+port: 389
+timeout: 10
+encryption: none
+weight: null
+bind_method: service_account
+binddn: SVC-GYLC-bddtm
+bindpw: dummy-password
+basedn:
+  - 'OU=Teachers,OU=Users,OU=GYLC,OU=EDU,DC=dgep,DC=edu-vaud,DC=ch'
+user_attr: samaccountname
+account_name_attr: ''
+mail_attr: userprincipalname
+mail_template: ''
+picture_attr: ''
+unique_persistent_attr: ''
+unique_persistent_attr_binary: false
+user_dn_expression: 'cn=%username,%basedn'
+testing_drupal_username: ''
+testing_drupal_user_dn: ''
+grp_unused: false
+grp_object_cat: ''
+grp_nested: false
+grp_user_memb_attr_exists: true
+grp_user_memb_attr: memberof
+grp_memb_attr: ''
+grp_memb_attr_match_user_attr: ''
+grp_derive_from_dn: false
+grp_derive_from_dn_attr: ''
+grp_test_grp_dn: ''
+grp_test_grp_dn_writeable: ''

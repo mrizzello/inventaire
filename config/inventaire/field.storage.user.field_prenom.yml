@@ -1,0 +1,21 @@
+uuid: 5e194280-21be-4d29-b3ff-7b0a1033ecd7
+langcode: fr
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_prenom
+field_name: field_prenom
+entity_type: user
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
