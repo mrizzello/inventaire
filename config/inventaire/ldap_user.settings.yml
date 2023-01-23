@@ -1,0 +1,41 @@
+_core:
+  default_config_hash: xGaDFlyXTmhzluhiRhEx58v_3Fu-nMhCzEBF8K4eqHU
+langcode: fr
+drupalAcctProvisionServer: dc_eduvaud
+ldapEntryProvisionServer: dc_eduvaud
+drupalAcctProvisionTriggers:
+  - drupal_on_login
+  - drupal_on_update_create
+ldapEntryProvisionTriggers: {  }
+orphanedDrupalAcctBehavior: ldap_user_orphan_email
+orphanedDrupalAcctReportingInbox: ''
+orphanedCheckQty: 100
+orphanedAccountCheckInterval: weekly
+userConflictResolve: resolve
+manualAccountConflict: conflict_associate
+acctCreation: ldap_behaviour
+disableAdminPasswordField: true
+userUpdateCronQuery: teacher_role
+userUpdateCronInterval: always
+ldapUserSyncMappings:
+  drupal:
+    field-field_nom:
+      ldap_attr: '[sn]'
+      user_attr: '[field.field_nom]'
+      convert: false
+      user_tokens: ''
+      config_module: ldap_user
+      prov_module: ldap_user
+      prov_events:
+        - create_drupal_user
+        - sync_to_drupal_user
+    field-field_prenom:
+      ldap_attr: '[givenName]'
+      user_attr: '[field.field_prenom]'
+      convert: false
+      user_tokens: ''
+      config_module: ldap_user
+      prov_module: ldap_user
+      prov_events:
+        - create_drupal_user
+        - sync_to_drupal_user

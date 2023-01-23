@@ -1,0 +1,33 @@
+uuid: 44d013bf-f7a6-4488-8230-bf4a3a7c7f9f
+langcode: fr
+status: true
+dependencies: {  }
+id: teachers
+label: teachers
+description: null
+provider: ldap_provider
+provider_config:
+  status:
+    server: dc_eduvaud
+    only_ldap_authenticated: false
+  filter_and_mappings:
+    use_first_attr_as_groupid: true
+provider_mappings:
+  -
+    query: ''
+    is_regex: false
+  -
+    query: ''
+    is_regex: false
+consumer: authorization_drupal_roles
+consumer_config: {  }
+consumer_mappings:
+  -
+    role: none
+  -
+    role: none
+synchronization_modes:
+  user_logon: user_logon
+synchronization_actions:
+  create_consumers: '0'
+  revoke_provider_provisioned: revoke_provider_provisioned

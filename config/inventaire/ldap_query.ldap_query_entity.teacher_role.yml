@@ -1,0 +1,14 @@
+uuid: 9536b931-86e2-4ed1-862f-c0d6dd2b9674
+langcode: fr
+status: true
+dependencies: {  }
+id: teacher_role
+label: teacher-role
+server_id: dc_eduvaud
+base_dn: 'OU=Teachers,OU=Users,OU=GYLC,OU=EDU,DC=dgep,DC=edu-vaud,DC=ch'
+filter: employeeType=Teacher
+attributes: ''
+size_limit: 0
+time_limit: 0
+dereference: 0
+scope: sub

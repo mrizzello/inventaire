@@ -1,4 +1,4 @@
-uuid: a1bf26ce-d070-495c-a7a9-d4785322ce01
+uuid: 1063bae3-3189-4882-b805-c41116601097
 langcode: fr
 status: true
 dependencies:
@@ -12,28 +12,28 @@ targetEntityType: user
 bundle: user
 mode: default
 content:
-  account:
-    weight: 0
+  field_nom:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 6
     region: content
+  field_prenom:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  member_for:
     settings: {  }
     third_party_settings: {  }
-  field_nom:
-    type: string_textfield
-    weight: 1
+    weight: 5
     region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-  field_prenom:
-    type: string_textfield
-    weight: 2
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
 hidden:
   langcode: true
-  language: true
-  timezone: true
+  name: true
+  search_api_excerpt: true

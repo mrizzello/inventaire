@@ -3,6 +3,8 @@ _core:
 langcode: fr
 module:
   admin_toolbar: 0
+  authorization: 0
+  authorization_drupal_roles: 0
   auto_entitylabel: 0
   block: 0
   block_content: 0
@@ -31,6 +33,11 @@ module:
   language: 0
   layout_builder: 0
   layout_discovery: 0
+  ldap_authentication: 0
+  ldap_authorization: 0
+  ldap_query: 0
+  ldap_servers: 0
+  ldap_user: 0
   link: 0
   locale: 0
   media: 0
@@ -56,6 +63,7 @@ module:
   user: 0
   views_ui: 0
   manage_display: 1
+  externalauth: 10
   views: 10
   minimal: 1000
 theme:
