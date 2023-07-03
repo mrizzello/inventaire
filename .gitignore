@@ -33,3 +33,6 @@
 
 # solr server
 /solr-8.11.2/
+
+# backups
+/backups/
