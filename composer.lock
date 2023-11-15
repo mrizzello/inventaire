@@ -7035,16 +7035,16 @@
         },
         {
             "name": "consolidation/self-update",
-            "version": "2.0.5",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/self-update.git",
-                "reference": "8a64bdd8daf5faa8e85f56534dd99caf928164b3"
+                "reference": "972a1016761c9b63314e040836a12795dff6953a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/self-update/zipball/8a64bdd8daf5faa8e85f56534dd99caf928164b3",
-                "reference": "8a64bdd8daf5faa8e85f56534dd99caf928164b3",
+                "url": "https://api.github.com/repos/consolidation/self-update/zipball/972a1016761c9b63314e040836a12795dff6953a",
+                "reference": "972a1016761c9b63314e040836a12795dff6953a",
                 "shasum": ""
             },
             "require": {
@@ -7084,22 +7084,22 @@
             "description": "Provides a self:update command for Symfony Console applications.",
             "support": {
                 "issues": "https://github.com/consolidation/self-update/issues",
-                "source": "https://github.com/consolidation/self-update/tree/2.0.5"
+                "source": "https://github.com/consolidation/self-update/tree/2.2.0"
             },
-            "time": "2022-02-09T22:44:24+00:00"
+            "time": "2023-03-18T01:37:41+00:00"
         },
         {
             "name": "consolidation/site-alias",
-            "version": "4.0.0",
+            "version": "4.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/site-alias.git",
-                "reference": "103fbc9bad6bbadb1f7533454a8f070ddce18e13"
+                "reference": "b0eeb8c8f3d54d072824ee31b5e00cb5181f91c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/site-alias/zipball/103fbc9bad6bbadb1f7533454a8f070ddce18e13",
-                "reference": "103fbc9bad6bbadb1f7533454a8f070ddce18e13",
+                "url": "https://api.github.com/repos/consolidation/site-alias/zipball/b0eeb8c8f3d54d072824ee31b5e00cb5181f91c5",
+                "reference": "b0eeb8c8f3d54d072824ee31b5e00cb5181f91c5",
                 "shasum": ""
             },
             "require": {
@@ -7143,9 +7143,9 @@
             "description": "Manage alias records for local and remote sites.",
             "support": {
                 "issues": "https://github.com/consolidation/site-alias/issues",
-                "source": "https://github.com/consolidation/site-alias/tree/4.0.0"
+                "source": "https://github.com/consolidation/site-alias/tree/4.0.1"
             },
-            "time": "2022-10-14T03:41:22+00:00"
+            "time": "2023-04-29T17:18:10+00:00"
         },
         {
             "name": "consolidation/site-process",
@@ -7207,22 +7207,22 @@
         },
         {
             "name": "drush/drush",
-            "version": "11.4.0",
+            "version": "11.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drush-ops/drush.git",
-                "reference": "d1f7809ceaf580c9e0bf4725e005975956af5629"
+                "reference": "f301df5dec8d2aacb03d3e01e0ffc6d98e10ae78"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/drush/zipball/d1f7809ceaf580c9e0bf4725e005975956af5629",
-                "reference": "d1f7809ceaf580c9e0bf4725e005975956af5629",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/f301df5dec8d2aacb03d3e01e0ffc6d98e10ae78",
+                "reference": "f301df5dec8d2aacb03d3e01e0ffc6d98e10ae78",
                 "shasum": ""
             },
             "require": {
                 "chi-teck/drupal-code-generator": "^2.4",
                 "composer/semver": "^1.4 || ^3",
-                "consolidation/annotated-command": "^4.7.0",
+                "consolidation/annotated-command": "^4.8.2",
                 "consolidation/config": "^2",
                 "consolidation/filter-via-dot-access-data": "^2",
                 "consolidation/robo": "^3.0.9 || ^4.0.1",
@@ -7340,7 +7340,7 @@
                 "forum": "http://drupal.stackexchange.com/questions/tagged/drush",
                 "issues": "https://github.com/drush-ops/drush/issues",
                 "slack": "https://drupal.slack.com/messages/C62H9CWQM",
-                "source": "https://github.com/drush-ops/drush/tree/11.4.0"
+                "source": "https://github.com/drush-ops/drush/tree/11.6.0"
             },
             "funding": [
                 {
@@ -7348,7 +7348,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-12-14T16:02:30+00:00"
+            "time": "2023-06-06T18:46:18+00:00"
         },
         {
             "name": "enlightn/security-checker",
@@ -7607,16 +7607,16 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.11.12",
+            "version": "v0.11.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "52cb7c47d403c31c0adc9bf7710fc355f93c20f7"
+                "reference": "4f00ee9e236fa6a48f4560d1300b9c961a70a7ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/52cb7c47d403c31c0adc9bf7710fc355f93c20f7",
-                "reference": "52cb7c47d403c31c0adc9bf7710fc355f93c20f7",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/4f00ee9e236fa6a48f4560d1300b9c961a70a7ec",
+                "reference": "4f00ee9e236fa6a48f4560d1300b9c961a70a7ec",
                 "shasum": ""
             },
             "require": {
@@ -7677,22 +7677,22 @@
             ],
             "support": {
                 "issues": "https://github.com/bobthecow/psysh/issues",
-                "source": "https://github.com/bobthecow/psysh/tree/v0.11.12"
+                "source": "https://github.com/bobthecow/psysh/tree/v0.11.18"
             },
-            "time": "2023-01-29T21:24:40+00:00"
+            "time": "2023-05-23T02:31:11+00:00"
         },
         {
             "name": "symfony/filesystem",
-            "version": "v6.2.5",
+            "version": "v6.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "e59e8a4006afd7f5654786a83b4fcb8da98f4593"
+                "reference": "edd36776956f2a6fcf577edb5b05eb0e3bdc52ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/e59e8a4006afd7f5654786a83b4fcb8da98f4593",
-                "reference": "e59e8a4006afd7f5654786a83b4fcb8da98f4593",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/edd36776956f2a6fcf577edb5b05eb0e3bdc52ae",
+                "reference": "edd36776956f2a6fcf577edb5b05eb0e3bdc52ae",
                 "shasum": ""
             },
             "require": {
@@ -7726,7 +7726,7 @@
             "description": "Provides basic utilities for the filesystem",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/filesystem/tree/v6.2.5"
+                "source": "https://github.com/symfony/filesystem/tree/v6.3.1"
             },
             "funding": [
                 {
@@ -7742,7 +7742,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-01-20T17:45:48+00:00"
+            "time": "2023-06-01T08:30:39+00:00"
         },
         {
             "name": "symfony/polyfill-intl-grapheme",
