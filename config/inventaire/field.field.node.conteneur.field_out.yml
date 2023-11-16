@@ -9,7 +9,7 @@ id: node.conteneur.field_out
 field_name: field_out
 entity_type: node
 bundle: conteneur
-label: 'Sortir de l''inventaire'
+label: "Sortir de l'inventaire"
 description: ''
 required: false
 translatable: false

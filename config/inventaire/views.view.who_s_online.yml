@@ -9,14 +9,14 @@ _core:
 id: who_s_online
 label: 'Bloc "Qui est connecté"'
 module: user
-description: 'Affiche les noms des utilisateurs les plus actifs récemment et le nombre total d''utilisateurs actifs.'
+description: "Affiche les noms des utilisateurs les plus actifs récemment et le nombre total d'utilisateurs actifs."
 tag: default
 base_table: users_field_data
 base_field: uid
 display:
   default:
     id: default
-    display_title: Default
+    display_title: 'Par défaut'
     display_plugin: default
     position: 0
     display_options:
@@ -66,8 +66,8 @@ display:
         options:
           submit_button: Appliquer
           reset_button: false
-          reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          reset_button_label: Réinitialiser
+          exposed_sorts_label: 'Trier par'
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
@@ -143,7 +143,7 @@ display:
           expose:
             operator_id: access_op
             label: 'Dernier accès'
-            description: 'Durée pendant laquelle on considère qu''un utilisateur est en ligne après qu''il ait vu une page pour la dernière fois.'
+            description: "Durée pendant laquelle on considère qu'un utilisateur est en ligne après qu'il ait vu une page pour la dernière fois."
             use_operator: false
             operator: access_op
             operator_limit_selection: false
@@ -214,7 +214,7 @@ display:
     display_plugin: block
     position: 1
     display_options:
-      display_description: 'Une liste d''utilisateurs actuellement connectés.'
+      display_description: "Une liste d'utilisateurs actuellement connectés."
       display_extenders: {  }
       block_description: 'Utilisateurs en ligne'
     cache_metadata:

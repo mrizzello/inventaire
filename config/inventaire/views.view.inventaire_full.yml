@@ -786,7 +786,7 @@ display:
           exposed: true
           expose:
             operator_id: field_file_value_op
-            label: 'File d''achat'
+            label: "File d'achat"
             description: ''
             use_operator: false
             operator: field_file_value_op
@@ -882,7 +882,7 @@ display:
           exposed: true
           expose:
             operator_id: ''
-            label: 'Sorti de l''inventaire'
+            label: "Sorti de l'inventaire"
             description: ''
             use_operator: false
             operator: field_out_value_op
