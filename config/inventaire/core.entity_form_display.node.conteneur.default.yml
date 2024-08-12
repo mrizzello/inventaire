@@ -38,7 +38,7 @@ third_party_settings:
       children:
         - field_out
         - field_date_out
-      label: 'Sortie de l''inventaire'
+      label: "Sortie de l'inventaire"
       region: content
       parent_name: ''
       weight: 13

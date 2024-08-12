@@ -9,7 +9,7 @@ module:
   block: 0
   block_content: 0
   breakpoint: 0
-  ckeditor: 0
+  ckeditor5: 0
   config: 0
   config_translation: 0
   contextual: 0
@@ -51,6 +51,7 @@ module:
   page_cache: 0
   path: 0
   path_alias: 0
+  phpass: 0
   search_api: 0
   search_api_solr: 0
   svg_image_field: 0

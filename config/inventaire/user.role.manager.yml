@@ -6,6 +6,7 @@ dependencies:
     - node.type.conteneur
     - node.type.substance
   module:
+    - file
     - node
 id: manager
 label: Manager
@@ -16,5 +17,6 @@ permissions:
   - 'create substance content'
   - 'delete any conteneur content'
   - 'delete any substance content'
+  - 'delete own files'
   - 'edit any conteneur content'
   - 'edit any substance content'

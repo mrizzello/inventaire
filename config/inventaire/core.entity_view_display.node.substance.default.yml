@@ -121,7 +121,7 @@ third_party_settings:
             region: first
             configuration:
               id: 'field_block:node:substance:field_signal_word'
-              label: 'Mention d''avertissement'
+              label: "Mention d'avertissement"
               label_display: '0'
               provider: layout_builder
               context_mapping:
@@ -172,6 +172,23 @@ third_party_settings:
                   view_mode: pictogrammes_sgh
                 third_party_settings: {  }
             weight: 5
+            additional: {  }
+          042a2037-c489-4f79-befa-418cdebeb529:
+            uuid: 042a2037-c489-4f79-befa-418cdebeb529
+            region: content
+            configuration:
+              id: 'field_block:node:substance:title'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: title
+                label: hidden
+                settings:
+                  link_to_entity: true
+                  tag: h2
+                third_party_settings: {  }
+            weight: 0
             additional: {  }
         third_party_settings: {  }
       -
@@ -263,7 +280,7 @@ content:
     type: title
     label: hidden
     settings:
-      linked: true
+      link_to_entity: true
       tag: h2
     third_party_settings: {  }
     weight: 0

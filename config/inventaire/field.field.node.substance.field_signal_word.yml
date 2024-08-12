@@ -10,7 +10,7 @@ id: node.substance.field_signal_word
 field_name: field_signal_word
 entity_type: node
 bundle: substance
-label: 'Mention d''avertissement'
+label: "Mention d'avertissement"
 description: ''
 required: false
 translatable: false
